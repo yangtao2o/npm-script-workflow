@@ -1,0 +1,34 @@
+{
+  "name": "npm-script-workflow",
+  "version": "1.0.0",
+  "description": "使用 npm script 实现前端工作流",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server client/",
+    "prebuild": "rm -rf dist && mkdir -p dist/{images,styles,scripts}",
+    "build": "scripty",
+    "build:images": "scripty",
+    "build:styles": "scripty",
+    "build:scripts": "scripty",
+    "build:hash": "scripty"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangtao2o/npm-script-workflow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangtao2o/npm-script-workflow/issues"
+  },
+  "homepage": "https://github.com/yangtao2o/npm-script-workflow#readme",
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "hashmark": "^5.0.0",
+    "imagemin-cli": "^4.0.1",
+    "node-sass": "^4.11.0",
+    "replaceinfiles": "^1.1.4",
+    "scripty": "^1.9.1",
+    "uglify-es": "^3.3.9"
+  }
+}
